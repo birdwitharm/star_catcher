@@ -26,3 +26,9 @@ if (distance_to_object(obj_planet) < gravity_distance)
 	gravity_affected = true;
 	
 }
+
+// shooting bullets
+if (mouse_check_button_pressed(mb_left))
+{
+	instance_create_layer(x, y, "Instances", obj_bullet);
+}

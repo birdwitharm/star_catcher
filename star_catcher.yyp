@@ -37,6 +37,8 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_small_star","path":"objects/obj_small_star/obj_small_star.yy",},},
     {"id":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},},
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"obj_cameraManager","path":"objects/obj_cameraManager/obj_cameraManager.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_small_star","path":"sprites/spr_small_star/spr_small_star.yy",},},

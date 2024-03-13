@@ -19,6 +19,8 @@
   "ResourceOrderSettings": [
     {"name":"obj_small_star","order":4,"path":"objects/obj_small_star/obj_small_star.yy",},
     {"name":"obj_planet","order":5,"path":"objects/obj_planet/obj_planet.yy",},
+    {"name":"obj_bullet","order":7,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"spr_bullet","order":4,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"obj_cameraManager","order":1,"path":"objects/obj_cameraManager/obj_cameraManager.yy",},
     {"name":"spr_small_star","order":2,"path":"sprites/spr_small_star/spr_small_star.yy",},
     {"name":"spr_planet","order":3,"path":"sprites/spr_planet/spr_planet.yy",},
