@@ -1,0 +1,1 @@
+x -= small_star_speed;

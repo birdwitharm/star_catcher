@@ -1,0 +1,1 @@
+small_star_speed = 12;

@@ -1,0 +1,2 @@
+x -= planet_speed;
+
