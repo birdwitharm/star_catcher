@@ -32,3 +32,23 @@ if (mouse_check_button_pressed(mb_left))
 {
 	instance_create_layer(x, y, "Instances", obj_bullet);
 }
+
+// gravity
+var planet_distance; 
+var planet_direction;
+var gravity_pull;
+
+var thing = 3000; // thing that makes the gravity stronger or weaker idk
+
+var nearest_planet = instance_nearest(x, y, obj_planet)
+
+planetDistance = point_distance(x, y, nearest_planet.x, nearest_planet.y)
+if planetDistance < 100
+{
+	planetDistance = 100; 
+}
+
+planet_direction = point_direction(x, y, obj_planet.x, obj_planet.y)
+planet_pull = thing * (1 / (planetDistance * planetDistance))
+
+motion_add(planet_direction, planet_pull)
