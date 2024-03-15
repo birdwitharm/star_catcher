@@ -53,3 +53,4 @@ if (distance_to_object(obj_planet) < gravity_distance)
 } else if !instance_exists(obj_planet) {
 	gravity_affected = false;
 }
+
