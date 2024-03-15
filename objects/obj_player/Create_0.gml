@@ -6,3 +6,5 @@ gravity_affected = false
 
 //test only
 alarm[1]=10
+
+image_speed = 0;

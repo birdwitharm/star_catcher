@@ -3,12 +3,16 @@ if (keyboard_check(ord("D")) && x + sprite_width < room_width)
 {
 	x += player_speed;
 	if (x > (obj_cameraManager.x + 700)) obj_cameraManager.x += player_speed;
+	
+	image_index = 0;
 }
 
 if (keyboard_check(ord("A")) && x > 0)
 {
 	x -= player_speed;
 	if (x < (obj_cameraManager.x + obj_cameraManager.view_width) - (700 + sprite_width)) obj_cameraManager.x -= player_speed;
+	
+	image_index = 1;
 }
 
 if (keyboard_check(ord("S")) && y + sprite_height < room_height)
@@ -25,6 +29,12 @@ if (keyboard_check(ord("W")) && y > 0)
 if (mouse_check_button_pressed(mb_left))
 {
 	instance_create_layer(x, y, "Instances", obj_bullet);
+}
+
+// going to your room
+if (keyboard_check_pressed(ord("K")))
+{
+	room_goto(rm_your_room)
 }
 
 // gravity

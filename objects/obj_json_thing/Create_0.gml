@@ -23,10 +23,10 @@ global.getInventory = function()
 	{
 		with (instance_create_layer (mx, my, "Instances", obj_galaxy_painting)) 
         {
-            inInventory = global.inventory[? "YellowStarLamp"][? "inInventory"];
-            held = global.inventory[? "YellowStarLamp"][? "held"];
-            canGrab = global.inventory[? "YellowStarLamp"][? "canGrab"];
-            grabDistance = global.inventory[? "YellowStarLamp"][? "grabDistance"];
+            inInventory = global.inventory[? "GalaxyPainting"][? "inInventory"];
+            held = global.inventory[? "GalaxyPainting"][? "held"];
+            canGrab = global.inventory[? "GalaxyPainting"][? "canGrab"];
+            grabDistance = global.inventory[? "GalaxyPainting"][? "grabDistance"];
         }
 	}
 	
@@ -34,10 +34,10 @@ global.getInventory = function()
 	{
 		with (instance_create_layer (mx, my, "Instances", obj_alien_cup)) 
         {
-            inInventory = global.inventory[? "YellowStarLamp"][? "inInventory"];
-            held = global.inventory[? "YellowStarLamp"][? "held"];
-            canGrab = global.inventory[? "YellowStarLamp"][? "canGrab"];
-            grabDistance = global.inventory[? "YellowStarLamp"][? "grabDistance"];
+            inInventory = global.inventory[? "AlienCup"][? "inInventory"];
+            held = global.inventory[? "AlienCup"][? "held"];
+            canGrab = global.inventory[? "AlienCup"][? "canGrab"];
+            grabDistance = global.inventory[? "AlienCup"][? "grabDistance"];
         }
 	}
 }
