@@ -21,12 +21,6 @@ if (keyboard_check(ord("W")) && y > 0)
 	y -= player_speed;
 }
 
-if (distance_to_object(obj_planet) < gravity_distance)
-{
-	gravity_affected = true;
-	
-}
-
 // shooting bullets
 if (mouse_check_button_pressed(mb_left))
 {
@@ -42,13 +36,20 @@ var thing = 3000; // thing that makes the gravity stronger or weaker idk
 
 var nearest_planet = instance_nearest(x, y, obj_planet)
 
-planetDistance = point_distance(x, y, nearest_planet.x, nearest_planet.y)
-if planetDistance < 100
+if (distance_to_object(obj_planet) < gravity_distance)
 {
-	planetDistance = 100; 
+	gravity_affected = true;
+	
+	planetDistance = point_distance(x, y, nearest_planet.x, nearest_planet.y)
+	if planetDistance < 100
+	{
+		planetDistance = 100; 
+	}
+	
+	planet_direction = point_direction(x, y, obj_planet.x, obj_planet.y)
+	planet_pull = thing * (1 / (planetDistance * planetDistance))
+
+	motion_add(planet_direction, planet_pull)
+} else if !instance_exists(obj_planet) {
+	gravity_affected = false;
 }
-
-planet_direction = point_direction(x, y, obj_planet.x, obj_planet.y)
-planet_pull = thing * (1 / (planetDistance * planetDistance))
-
-motion_add(planet_direction, planet_pull)
